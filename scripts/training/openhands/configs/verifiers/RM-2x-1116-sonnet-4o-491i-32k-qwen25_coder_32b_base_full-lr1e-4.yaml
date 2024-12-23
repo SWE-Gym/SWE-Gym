@@ -1,7 +1,7 @@
 # N_GPUS=8 modal run --detach train_torchtune_full_exp.py --config RM-1x-1116-sonnet-4o-491i-32k-qwen25_coder_32b_base_full-lr1e-4.yaml
 
 exp_name: RM-2x-1116-sonnet-4o-491i-32k-qwen25_coder_32b_base_full-lr1e-4
-output_dir: /llm-weights/xingyaoww/outputs/${exp_name}
+output_dir: /llm-weights/outputs/${exp_name}
 # Model Arguments
 model:
   _component_: torchtune.models.qwen2_5.qwen2_5_32b_instruct
@@ -41,7 +41,7 @@ resume_from_checkpoint: False
 dataset:
   _component_: torchtune.datasets.chat_dataset
   source: json
-  data_files: /dataset/xingyaoww/2024-11-16-sonnet-4o-491instances/rm_conv_32k_443i_negative_2x_886i.jsonl
+  data_files: /dataset/my_datasets/rm_conv_32k_443i_negative_2x_886i.jsonl
   split: train
   conversation_column: messages
   conversation_style: openai
