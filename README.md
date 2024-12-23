@@ -1,7 +1,6 @@
 <h1 align="center"> Training Software Engineering Agents and Verifiers with SWE-Gym </h1>
 
 <p align="center">
-<div style="text-align: center; font-size: 1.1em; line-height: 1.6;">
   <a href="https://www.jiayipan.com/" style="text-decoration: none;">Jiayi Pan<sup>*,1</sup></a>, 
   <a href="https://xwang.dev/" style="text-decoration: none;">Xingyao Wang<sup>*,2</sup></a>,
   <a href="https://www.phontron.com/" style="text-decoration: none;">Graham Neubig<sup>3</sup></a>,
@@ -9,13 +8,13 @@
   <a href="https://blender.cs.illinois.edu/hengji.html" style="text-decoration: none;">Ji Heng<sup>2</sup></a>,
   <a href="https://www.alanesuhr.com/" style="text-decoration: none;">Alane Suhr<sup>^,1</sup></a>,
   <a href="https://dreasysnail.github.io/" style="text-decoration: none;">Yizhe Zhang<sup>^,4</sup></a>
-</div>
-<div style="text-align: center; font-size: 1.0em;">
+
+<p align="center" style="font-size: 1.0em; line-height: 0.8;">
   <sup>1</sup>UC Berkeley, <sup>2</sup>UIUC, <sup>3</sup>CMU, <sup>4</sup>Apple
-</div>
-<div style="text-align: center; font-size: 0.9em;">
+</p>
+<p align="center" style="font-size: 0.8em; line-height: 0.5;">
   <sup>*</sup>Equal contribution, <sup>^</sup>Equal supervision
-</div>
+</p>
 </p>
 <p align="center">
 <a href="assets/paper.pdf">📃 Paper</a>
