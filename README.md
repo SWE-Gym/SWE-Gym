@@ -41,14 +41,14 @@ Our baselines achieve new open SOTA - 32%/26% on SWE-Bench Verified/Lite, with p
 ![SWE-Gym Scaling](./assets/images/scaling.jpg)
 *SWE-Gym enables scalable improvements for software engineering agents at both training and inference time. Our current results is primarity bottlenecked by training and inference compute, rather than the size of our environment.*
 
-## SWE-Gym
+## SWE-Gym Environment
 
 We create SWE-Gym, the first environment for training SWE agents, with **2.4K real tasks from 11 Python repos** & a Lite split of 234 instances. SWE-Gym combines real-world Python tasks, repository context, executable environments, and test verification to train agents for solving software engineering problems.
 
 ![SWE-Gym Repo Distribution](./assets/images/swe-gym.jpg)
 
 
-## SWE-Gym trains LMs as agents.
+## SWE-Gym trains LMs as agents
 
 When fine-tuned on less than 500 agent-environment interaction trajectories sampled from it from GPT-4o and Claude 3.5 Sonnet, we achieve **+14%** absolute gains on SWE-Bench Verified with an 32B LM-powered OpenHands agent.
 
