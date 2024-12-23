@@ -1,4 +1,4 @@
-**Training Software Engineering Agents and Verifiers with SWE-Gym**
+# Training Software Engineering Agents and Verifiers with SWE-Gym
 
 [Jiayi Pan*](https://www.jiayipan.com/), [Xingyao Wang*](https://xwang.dev/), [Graham Neubig](https://www.phontron.com/), [Navdeep Jaitly](https://www.cs.toronto.edu/~ndjaitly/), [Ji Heng](https://blender.cs.illinois.edu/hengji.html), [Alane Suhr^](https://www.alanesuhr.com/), [Yizhe Zhang^](https://dreasysnail.github.io/)
 
