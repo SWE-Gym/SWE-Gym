@@ -5,7 +5,7 @@
   <a href="https://xwang.dev/" style="text-decoration: none;">Xingyao Wang<sup>*,2</sup></a>,
   <a href="https://www.phontron.com/" style="text-decoration: none;">Graham Neubig<sup>3</sup></a>,
   <a href="https://www.cs.toronto.edu/~ndjaitly/" style="text-decoration: none;">Navdeep Jaitly<sup>4</sup></a>,
-  <a href="https://blender.cs.illinois.edu/hengji.html" style="text-decoration: none;">Ji Heng<sup>2</sup></a>,
+  <a href="https://blender.cs.illinois.edu/hengji.html" style="text-decoration: none;">Heng Ji<sup>2</sup></a>,
   <a href="https://www.alanesuhr.com/" style="text-decoration: none;">Alane Suhr<sup>^,1</sup></a>,
   <a href="https://dreasysnail.github.io/" style="text-decoration: none;">Yizhe Zhang<sup>^,4</sup></a>
 </p>
