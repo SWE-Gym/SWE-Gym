@@ -1,0 +1,132 @@
+# Config for multi-device full finetuning in full_finetune_distributed.py
+# using a Qwen2.5 7B model
+#
+# This config assumes that you've run the following command before launching
+# this run:
+#   tune download Qwen/Qwen2.5-7B-Instruct --output-dir /tmp/Qwen2_5-7B-Instruct
+#
+# To launch on 2 devices, run the following command from root:
+#   tune run --nnodes 1 --nproc_per_node 2 full_finetune_distributed --config qwen2_5/7B_full
+#
+# You can add specific overrides through the command line. For example
+# to override the checkpointer directory while launching training
+# you can run:
+#   tune run --nnodes 1 --nproc_per_node 2 full_finetune_distributed --config qwen2_5/7B_full checkpointer.checkpoint_dir=<YOUR_CHECKPOINT_DIR>
+#
+# This config works best when the model is being fine-tuned on 2+ GPUs.
+# Single device full finetuning requires more memory optimizations. It's
+# best to use 7B_full_single_device.yaml for those cases
+
+exp_name: 1116-sonnet-4o-491i-32k-qwen2p5-coder-32b-full-lr1e-4-warmup5-uniq-data
+output_dir: /llm-weights/xingyaoww/outputs/${exp_name}
+# Model Arguments
+model:
+  _component_: torchtune.models.qwen2_5.qwen2_5_32b_instruct
+
+tokenizer:
+  _component_: torchtune.models.qwen2_5.qwen2_5_tokenizer
+  path: /llm-weights/Qwen/Qwen2.5-Coder-32B-Instruct/vocab.json
+  merges_file: /llm-weights/Qwen/Qwen2.5-Coder-32B-Instruct/merges.txt
+  max_seq_len: 32768
+
+checkpointer:
+  _component_: torchtune.training.FullModelHFCheckpointer
+  checkpoint_dir: /llm-weights/Qwen/Qwen2.5-Coder-32B-Instruct
+  checkpoint_files: [
+    model-00001-of-00014.safetensors,
+    model-00002-of-00014.safetensors,
+    model-00003-of-00014.safetensors,
+    model-00004-of-00014.safetensors,
+    model-00005-of-00014.safetensors,
+    model-00006-of-00014.safetensors,
+    model-00007-of-00014.safetensors,
+    model-00008-of-00014.safetensors,
+    model-00009-of-00014.safetensors,
+    model-00010-of-00014.safetensors,
+    model-00011-of-00014.safetensors,
+    model-00012-of-00014.safetensors,
+    model-00013-of-00014.safetensors,
+    model-00014-of-00014.safetensors,
+  ]
+  recipe_checkpoint: null
+  output_dir: ${output_dir}
+  model_type: QWEN2
+  safe_serialization: True
+resume_from_checkpoint: False
+
+# Dataset and Sampler
+dataset:
+  _component_: torchtune.datasets.chat_dataset
+  source: json
+  data_files: /dataset/xingyaoww/2024-11-16-sonnet-4o-491instances/converted_for_oss.dedup294i.jsonl
+  split: train
+  conversation_column: messages
+  conversation_style: openai
+  train_on_input: False
+  new_system_prompt: null
+  packed: True  # True increases speed
+seed: 42
+shuffle: True
+batch_size: 1
+
+# Optimizer and Scheduler
+optimizer:
+  _component_: torch.optim.AdamW
+  fused: True
+  weight_decay: 0.01
+  lr: 1e-4
+lr_scheduler:
+  _component_: torchtune.training.lr_schedulers.get_cosine_schedule_with_warmup
+  num_warmup_steps: 5
+optimizer_in_bwd: True
+loss:
+  _component_: torchtune.modules.loss.CEWithChunkedOutputLoss
+
+# Training
+epochs: 5
+max_steps_per_epoch: null
+gradient_accumulation_steps: 1 # Use to increase virtual batch size
+compile: True  # pytorch compile, set to true for better perf/memory
+
+# Logging
+metric_logger:
+  _component_: torchtune.training.metric_logging.WandBLogger
+  project: devrl-sft
+  group: ${exp_name}
+  job_type: full_finetune_distributed
+log_every_n_steps: 1
+log_peak_memory_stats: True
+
+# Environment
+device: cuda
+dtype: bf16
+enable_activation_checkpointing: True  # True reduces memory
+enable_activation_offloading: False  # True reduces memory
+# custom_sharded_layers: ['tok_embeddings']  # Layers to shard separately (useful for large vocab size models). Lower Memory, but lower speed.
+
+# Show case the usage of pytorch profiler
+# Set enabled to False as it's only needed for debugging training
+profiler:
+  _component_: torchtune.training.setup_torch_profiler
+
+  enabled: False
+
+  #Output directory of trace artifacts
+  output_dir: ${output_dir}/profiling_outputs
+
+  #`torch.profiler.ProfilerActivity` types to trace
+  cpu: True
+  cuda: True
+
+  #trace options passed to `torch.profiler.profile`
+  profile_memory: False
+  with_stack: False
+  record_shapes: True
+  with_flops: False
+
+  # `torch.profiler.schedule` options:
+  # wait_steps -> wait, warmup_steps -> warmup, active_steps -> active, num_cycles -> repeat
+  wait_steps: 5
+  warmup_steps: 5
+  active_steps: 2
+  num_cycles: 1
