@@ -55,7 +55,7 @@ When fine-tuned on less than 500 agent-environment interaction trajectories samp
 
 ## SWE-Gym enables self-improvement
 
-SWE-Gym is also effective across agent scaffolds. With rejection sampling fine-tuning and MeatlessTools scaffold, our 32B and 7B models achieve 20% and 10% respectively on SWE-Bench Lite through self-improvement.
+SWE-Gym is also effective across agent scaffolds. With rejection sampling fine-tuning and MoatlessTools scaffold, our 32B and 7B models achieve 20% and 10% respectively on SWE-Bench Lite through self-improvement.
 
 <p align="center">
   <img src="./assets/images/ml-agent.jpg" width="80%" alt="Moatless self-improvement">
