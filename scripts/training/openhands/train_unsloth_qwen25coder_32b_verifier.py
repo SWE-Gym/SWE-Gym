@@ -211,9 +211,9 @@ def train(
 
 @app.local_entrypoint()  # defining a CLI entrypoint
 def main():
-    data_path = "/dataset/xingyaoww/2024-11-16-sonnet-4o-491instances/rm_conv_32k_claude+4o+onpolicy_1318i_negative_1x_1318i.jsonl"
-    exp_name = "RM-claude+4o+onpolicy-1x-1116-sonnet-4o-491i-32k-qwen25_coder_32b_base_full-lr1e-4-lora-r64-a64"
-    output_dir = f'/llm-weights/xingyaoww/outputs/{exp_name}'
+    data_path = "/dataset/my_datasets/openhands-verifier-trajectories"
+    exp_name = "my-verifier-run"
+    output_dir = f'/llm-weights/outputs/{exp_name}'
     model_path = '/llm-weights/Qwen/Qwen2.5-Coder-32B'
     print(f"Running training with exp_name={exp_name}, output_dir={output_dir}, model_path={model_path}, data_path={data_path}")
 

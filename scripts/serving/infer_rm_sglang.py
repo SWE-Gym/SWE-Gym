@@ -1,7 +1,7 @@
 """
 Infer RM scores using SGLang.
 
-N_GPUS=2 modal run infer_rm_sglang.py --infer-jsonl-path /dataset/xingyaoww/rm_exp/qwencoder-32b-1116-sonnet-4o-491i-32k-8+1runs-rm_prompt.jsonl --model-path /llm-weights/xingyaoww/outputs/RM-1x-1116-sonnet-4o-491i-32k-qwen25_coder_32b_base_full-lr1e-4/epoch_4 --tokenizer-path /llm-weights/Qwen/Qwen2.5-Coder-32B-Instruct --context-length 32768
+N_GPUS=2 modal run infer_rm_sglang.py --infer-jsonl-path /dataset/xingyaoww/rm_exp/qwencoder-32b-1116-sonnet-4o-491i-32k-8+1runs-rm_prompt.jsonl --model-path /llm-weights/outputs/RM-1x-1116-sonnet-4o-491i-32k-qwen25_coder_32b_base_full-lr1e-4/epoch_4 --tokenizer-path /llm-weights/Qwen/Qwen2.5-Coder-32B-Instruct --context-length 32768
 """
 
 import modal
