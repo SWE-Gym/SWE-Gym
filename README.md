@@ -84,7 +84,7 @@ Lastly, our ablations reveal strong scaling trends - performance is now bottlene
 
 ## Reproducing Results
 
-See [docs/OpenHands.md](docs/OpenHands.md) and [docs/MoatlessTools.md](docs/MoatlessTools.md) for instructions on reproducing results with our OpenHands and MoatlessTools agents.
+See [docs/OpenHands.md](docs/OpenHands.md) and [docs/MoatlessTools.md](docs/MoatlessTools.md) for instructions on reproducing results with our training and inference-time results for OpenHands and MoatlessTools agents.
 
 ## 📚 Citation
 
