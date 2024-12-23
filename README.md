@@ -18,8 +18,6 @@
 <p align="center">
 <a href="assets/paper.pdf">📃 Paper</a>
 •
-<a href="https://swe-gym.github.io/" >🌐 Project Site </a>
-•
 <a href="https://huggingface.co/SWE-Gym" >🤗 Data & Models</a>
 </p>
 
