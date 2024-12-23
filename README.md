@@ -8,14 +8,13 @@
   <a href="https://blender.cs.illinois.edu/hengji.html" style="text-decoration: none;">Ji Heng<sup>2</sup></a>,
   <a href="https://www.alanesuhr.com/" style="text-decoration: none;">Alane Suhr<sup>^,1</sup></a>,
   <a href="https://dreasysnail.github.io/" style="text-decoration: none;">Yizhe Zhang<sup>^,4</sup></a>
+</p>
 
-<p align="center" style="font-size: 1.0em; line-height: 0.8;">
-  <sup>1</sup>UC Berkeley, <sup>2</sup>UIUC, <sup>3</sup>CMU, <sup>4</sup>Apple
+<p align="center">
+  <sup>1</sup>UC Berkeley, <sup>2</sup>UIUC, <sup>3</sup>CMU, <sup>4</sup>Apple </br>
+  <sub><sup>*</sup>Equal contribution, <sup>^</sup>Equal supervision</sub>
 </p>
-<p align="center" style="font-size: 0.8em; line-height: 0.5;">
-  <sup>*</sup>Equal contribution, <sup>^</sup>Equal supervision
-</p>
-</p>
+
 <p align="center">
 <a href="assets/paper.pdf">📃 Paper</a>
 •
