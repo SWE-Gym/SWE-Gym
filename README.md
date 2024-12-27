@@ -84,8 +84,11 @@ Lastly, our ablations reveal strong scaling trends - performance is now bottlene
 
 ## Reproducing Results
 **The Dataset**
+
 To access SWE-Gym dataset, checkout our huggingface hub page [SWE-Gym](https://huggingface.co/SWE-Gym)
+
 The environment constants are currently saved at [SWE-Bench-Fork](https://github.com/SWE-Gym/SWE-Bench-Fork)
+
 We also have pre-built docker images for each instance under [xingyaoww/sweb.eval.x86_64](https://hub.docker.com/search?q=xingyaoww%2Fsweb.eval.x86_64.) prefix at docker hub.
 
 **The Experiments**
