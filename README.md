@@ -98,9 +98,13 @@ See [docs/OpenHands.md](docs/OpenHands.md) and [docs/MoatlessTools.md](docs/Moat
 ## 📚 Citation
 
 ```bibtex
-@misc{pan2024swegym,
-      title={Training Software Engineering Agents and Verifiers with {SWE-Gym}},
-      author={Pan, Jiayi and Wang, Xingyao and Neubig, Graham and Jaitly, Navdeep and Ji, Heng and Suhr, Alane and Zhang, Yizhe},
+@misc{pan2024trainingsoftwareengineeringagents,
+      title={Training Software Engineering Agents and Verifiers with SWE-Gym}, 
+      author={Jiayi Pan and Xingyao Wang and Graham Neubig and Navdeep Jaitly and Heng Ji and Alane Suhr and Yizhe Zhang},
       year={2024},
+      eprint={2412.21139},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2412.21139}, 
 }
 ```
