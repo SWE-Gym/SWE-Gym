@@ -37,7 +37,7 @@ We introduce SWE-Gym: An Open Environment for Training Software Engineering Agen
 Our baselines achieve new open SOTA - 32%/26% on SWE-Bench Verified/Lite, with promising scaling trends.
 
 ![SWE-Gym Scaling](./assets/images/scaling.jpg)
-*SWE-Gym enables scalable improvements for software engineering agents at both training and inference time. Our current results is primarity bottlenecked by training and inference compute, rather than the size of our environment.*
+*SWE-Gym enables scalable improvements for software engineering agents at both training and inference time. Our current results is primarily bottlenecked by training and inference compute, rather than the size of our environment.*
 
 ## SWE-Gym Environment
 
