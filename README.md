@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-<a href="assets/paper.pdf">📃 Paper</a>
+<a href="https://arxiv.org/abs/2412.21139">📃 Paper</a>
 •
 <a href="https://huggingface.co/SWE-Gym" >🤗 Data & Models</a>
 </p>
