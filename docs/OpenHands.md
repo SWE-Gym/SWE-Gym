@@ -5,7 +5,7 @@
 **For agent trajectory rollouts & evaluation**
 
 
-1. `git clone https://github.com/SWE-Gym/OpenHands.git`
+1. `git clone https://github.com/SWE-Gym/OpenHands.git` Note that OpenHands is updated very often, and our results is obtained with this specific Fork. It's expected to observe notable performance difference if you are using the latest version.
 2. Setup OpenHands on your workstation following [this](https://github.com/SWE-Gym/OpenHands/blob/main/Development.md#start-the-server-for-development)
 3. Familarize yourself with how OpenHands performs SWE-Bench evaluation: [README](https://github.com/SWE-Gym/OpenHands/blob/main/evaluation/swe_bench/README.md)
 4. (Recommended) Get access to OpenHands [`RemoteRuntime`](https://github.com/SWE-Gym/OpenHands/blob/main/evaluation/swe_bench/README.md#run-inference-on-remoteruntime-experimental). Check [this blog](https://www.all-hands.dev/blog/evaluation-of-llms-as-coding-agents-on-swe-bench-at-30x-speed) for a quick intro of `RemoteRuntime`.
