@@ -81,6 +81,8 @@ cd OpenHands
 ./scripts/eval-swetrain-full-rollout.sh evaluation/evaluation_outputs/outputs/SWE-Bench__SWE-Bench_Verified-test/CodeActAgent/my-oss-model_maxiter_50_N_v2.2-no-hint-my_exp_name-run_1/output.jsonl 32
 ```
 
+See disucssoins here on how to convert the trajectories to SFT format https://github.com/SWE-Gym/SWE-Gym/issues/9
+
 # Training and Serving Models
 
 ## Training the Policy
