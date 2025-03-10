@@ -94,6 +94,9 @@ We also have pre-built docker images for each instance under [xingyaoww/sweb.eva
 **The Experiments**
 See [docs/OpenHands.md](docs/OpenHands.md) and [docs/MoatlessTools.md](docs/MoatlessTools.md) for instructions on reproducing results with our training and inference-time results for OpenHands and MoatlessTools agents.
 
+**Generate trajectories with OpenHands for Training**
+Please checkout instructions [here](https://github.com/All-Hands-AI/OpenHands/blob/main/evaluation/benchmarks/swe_bench/SWE-Gym.md)
+
 
 ## 📚 Citation
 
