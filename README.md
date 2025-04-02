@@ -97,6 +97,8 @@ See [docs/OpenHands.md](docs/OpenHands.md) and [docs/MoatlessTools.md](docs/Moat
 **Generate trajectories with OpenHands for Training**
 Please check out the instructions [here](https://github.com/All-Hands-AI/OpenHands/blob/main/evaluation/benchmarks/swe_bench/SWE-Gym.md)
 
+## Awesome Work using SWE-Gym
+- [OpenHands LM](https://www.all-hands.dev/blog/introducing-openhands-lm-32b----a-strong-open-coding-agent-model): OpenHands LM 32B is an agentic coding language model trained with SWE-Gym, achieving a 37% success rate on SWE-Bench Verified.
 
 ## 📚 Citation
 
