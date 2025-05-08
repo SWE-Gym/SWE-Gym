@@ -98,6 +98,8 @@ See [docs/OpenHands.md](docs/OpenHands.md) and [docs/MoatlessTools.md](docs/Moat
 Please check out the instructions [here](https://github.com/All-Hands-AI/OpenHands/blob/main/evaluation/benchmarks/swe_bench/SWE-Gym.md)
 
 ## Awesome Work using SWE-Gym
+- [Sky-RL](https://github.com/NovaSky-AI/SkyRL): Online RL for further performance improvement: OpenHands-7B-Agent 11% SR -> 14.6%	SR after RL.
+- [OpenHands Critic](https://www.all-hands.dev/blog/sota-on-swe-bench-verified-with-inference-time-scaling-and-critic-model): SOTA on SWE-Bench Verified with inference-time scaling and critic Model leant on SWE-Gym.
 - [OpenHands LM](https://www.all-hands.dev/blog/introducing-openhands-lm-32b----a-strong-open-coding-agent-model): OpenHands LM 32B is an agentic coding language model trained with SWE-Gym, achieving a 37% success rate on SWE-Bench Verified.
 
 ## 📚 Citation
