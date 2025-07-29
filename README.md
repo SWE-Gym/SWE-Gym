@@ -105,13 +105,12 @@ Please check out the instructions [here](https://github.com/All-Hands-AI/OpenHan
 ## 📚 Citation
 
 ```bibtex
-@misc{pan2024trainingsoftwareengineeringagents,
-      title={Training Software Engineering Agents and Verifiers with SWE-Gym}, 
-      author={Jiayi Pan and Xingyao Wang and Graham Neubig and Navdeep Jaitly and Heng Ji and Alane Suhr and Yizhe Zhang},
-      year={2024},
-      eprint={2412.21139},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE},
-      url={https://arxiv.org/abs/2412.21139}, 
+@inproceedings{pan2025training,
+  title     = {Training Software Engineering Agents and Verifiers with SWE‑Gym},
+  author    = {Pan, Jiayi and Wang, Xingyao and Neubig, Graham and Jaitly, Navdeep and Ji, Heng and Suhr, Alane and Zhang, Yizhe},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML 2025)},
+  year      = {2025},
+  note      = {arXiv:2412.21139, accepted at ICML 2025},
+  url       = {https://arxiv.org/abs/2412.21139},
 }
 ```
