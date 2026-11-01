@@ -45,6 +45,7 @@ We create SWE-Gym, the first environment for training SWE agents, with **2.4K re
 
 ![SWE-Gym Repo Distribution](./assets/images/swe-gym.jpg)
 
+> Patch before use: SWE-Gym envs contain a git shortcut similar to [SWE-bench #465](https://github.com/SWE-bench/SWE-bench/issues/465). Please apply a git clean up script before using it to prevent models reward hacking.
 
 ## SWE-Gym trains LMs as agents
 
