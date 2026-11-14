@@ -282,7 +282,7 @@ def apply_patch(
             logger=logger,
         )
     
-    exec_wrapper(f"git diff > {init_diff_patch_path}", shell=True)
+    exec_wrapper(f"git diff --binary > {init_diff_patch_path}", shell=True)
 
     # If patch is `None`, indicate in log and skip
     if patch is None:
